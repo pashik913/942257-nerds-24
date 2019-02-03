@@ -7,7 +7,7 @@
   <body>
    <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-navigation">
+      <a class="main">
        <img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
      </a>
      <ul>
@@ -16,137 +16,140 @@
        <li><a href="shop.html">Магазин</a></li>
        <li><a href="contacts.html">Контакты</a></li>
      </ul>
-
-       <a class="main-navigation">
-         <img src="img/cart-icon.svg" width="15" height="15" alt="корзина">Корзина
-       </a>
       </nav>
+      <a class="main-navigation">
+        <!--фон<img src="img/cart-icon.svg" width="15" height="15" alt="корзина">-->
+        Корзина
+      </a>
      </header>
 
    <main class="container">
-     <h1 class="visually-hidden">Нёрдс</h1>
 
-     <section class="slides">
-     <h2 class="visually-hidden">Преимущества</h2>
-     <ul class="features-hidden">
-       <h3>Долго, дорого, скурпулезно.</h3>
+    <section class="slider">
+     <h1 class="visually-hidden">Дизайн-студия из краснодара</h1>
+     <ul class="features">
        <li class="feature-item">
+         <b>Долго, дорого, скурпулезно.</b>
          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-         <span class="button">
-           <a href="#">Узнать больше</a>
-         </span>
+         <a href="#" class="link-background">Узнать больше</a>
        </li>
 
        <li class="feature-item">
-         <h3>Любим математика как никто другой</h3>
+         <b>Любим математику как никто другой</b>
          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
-         <span class="button">
-           <a href="#">Узнать больше</a>
-         </span>
+         <a href="#" class="link-background">Узнать больше</a>
        </li>
 
        <li class="feature-item">
-         <h3>Только ночь, только хардкор</h3>
+         <b>Только ночь, только хардкор</b>
          <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается</p>
-         <span class="button">
-           <a href="#">Узнать больше</a>
-         </span>
+         <a href="#" class="link-background">Узнать больше</a>
        </li>
      </ul>
-   </section>
 
-   <section class="gods">
-     <img src="img/illustration-1.jpg" width="300" height="146" alt="сайты">
-      <ul>
-       <li class="advantages">
-         <h2>Веб-сайты</h2>
-         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
-       </li>
+     <ul class="slider-points">
+           <li class="first first-active"></li>
+           <li class="second second-active"></li>
+           <li class="third third-active"></li>
      </ul>
-     <a href="#">Заказать</a>
-   </section>
 
-   <section class="apps">
-     <img src="img/illustration-2.jpg" width="300" height="146" alt="приложения">
-      <ul>
-       <li class="advantages">
-         <h2>Приложения</h2>
-         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-       </li>
-     </ul>
-     <a href="#">Заказать</a>
-   </section>
-
-   <section class="presentation">
-     <img src="img/illustration-3.jpg" width="300" height="146" alt="презентации">
-      <ul>
-       <li class="advantages">
-         <h2>Презентация</h2>
-         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-       </li>
-     </ul>
-     <a href="#">Заказать</a>
    </section>
 
    <section class="studio">
-     <ul>
-       <li>
-        <h2>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h2>
-         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук</p>
+
+      <ul class="items">
+       <li class="advantages">
+         <img src="img/illustration-1.jpg" width="300" height="146" alt="Наши веб-сайты">
+         <h2>Веб-сайты</h2>
+         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+         <a href="#">Заказать</a>
+       </li>
+
+       <li class="advantages">
+         <img src="img/illustration-2.jpg" width="300" height="146" alt="Наши приложения">
+         <h2>Приложения</h2>
+         <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+         <a href="#">Заказать</a>
+       </li>
+
+       <li class="advantages">
+         <img src="img/illustration-3.jpg" width="300" height="146" alt="Наши презентации">
+         <h2>Презентация</h2>
+         <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+         <a href="#">Заказать</a>
        </li>
      </ul>
 
+   </section>
+
+   <section class="studio">
+
+      <h3>Мы-маленькая, но гордая дизайн-студия из Краснодара.</h3>
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук</p>
+
+     <b>Выполняем заказы на разработку</b>
      <ul>
        <li>Веб-сайтов любой сложности</li>
        <li>Мобильных приложений для iOS и Android</li>
        <li>Слайдшоу и видео для корпоративных презентаций</li>
      </ul>
+
+     <!--НА ФОН<img src="img/nerds-illustration.jpg" width="360" height="208" alt="нердс">-->
+     <b>С 2004 года любим точность во всем:</b>
+
+     <table>
+       <tr>
+         <td>146%</td>
+         <td>100%</td>
+         <td>50%</td>
+       </tr>
+
+       <tr>
+         <td>Уровень самоотдачи</td>
+         <td>Соблюдение сроков</td>
+         <td>Минимальная предоплата</td>
+       </tr>
+     </table>
+
    </section>
 
-   <section class="stats">
-     <img src="img/nerds-illustration.jpg" width="360" height="208" alt="нердс">
-     <p>С 2004 года любим точность во всем:</p>
-     <ul>
-       <li><h2>146%</h2></li>
-       <li>Уровень самоотдачи</li>
-     </ul>
+   <section class="social-list">
+     <ul class="social-link">
+     <li>
+      <img src="img/logo-1.png" width="199" height="68" alt="академия">
+     </li>
 
-     <ul>
-       <li><h2>100%</h2></li>
-       <li>Соблюдение сроков</li>
-     </ul>
+     <li>
+      <img src="img/logo-2.png" width="209" height="87" alt="барбершоп">
+     </li>
 
-     <ul>
-       <li><h2>50%</h2></li>
-       <li>Минимальная предоплата</li>
-     </ul>
-   </section>
-
-   <section>
-     <h2 class="visually-hidden">Логотипы</h2>
-     <img src="img/logo-1.png" width="199" height="68" alt="академия">
-     <img src="img/logo-2.png" width="209" height="87" alt="барбершоп">
+     <li>
      <img src="img/logo-3.png" width="185" height="52" alt="пинк">
+     </li>
+
+     <li>
      <img src="img/logo-4.png" width="173" height="84" alt="мишка">
+     </li>
+
+     </ul>
    </section>
    </main>
 
    <footer>
-     <div class="footer-social">
-       <b>Давайте дружить</b>
-       <ul>
-         <li><a class="social-button" href="#">Вконтакте</a></li>
-         <li><a class="social-button" href="#">Фейсбук</a></li>
-         <li><a class="social-button" href="#">Инстаграм</a></li>
-       </ul>
+     <div class="social-web">
+       <p>
+       Мы вконтакте
+       </p>
+       <p>
+       Мы в фейсбуке
+       </p>
+       <p>
+       Мы в инстаграмме
+       </p>
      </div>
 
-     <ul>
-       <li>
-       <h2>Давайте дружить, это выгодно</h2>
-       </li>
-       <li>Скидка 10% для друзей из социальных сетей</li>
-     </ul>
+       <b>Давайте дружить, это выгодно</b>
+       <p>Скидка 10% для друзей из социальных сетей</p>
 
    </footer>
 
