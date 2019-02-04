@@ -26,60 +26,57 @@
      </header>
 
      <main>
-       <!-- <section class="filter">
-        <form id="filter-radio-checkbox" action="#">
+       <section class="filters">
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
         <legend>Сетка:</legend>
 
          <ul>
-           <li>
-             <input type="radio" name="filter-radio" checked>
-             <label for="filter-radio-checkbox" id="adaptive">Адаптивная</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-adaptive" value="adaptive" type="radio" checked>
+             <label for="filter-adaptive">Адаптивная</label>
            </li>
 
-           <li>
-             <input type="radio" name="filter-radio">
-             <label for="filter-radio-checkbox" id="fixed">Фиксированная</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-fixed" value="fixed" type="radio">
+             <label for="filter-fixed">Фиксированная</label>
            </li>
 
-           <li>
-             <input type="radio" name="filter-radio" id="rubber">
-             <label for="filter-radio-checkbox">Резиновая</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-rubber" value="rubber" type="radio">
+             <label for="filter-rubber">Резиновая</label>
            </li>
          </ul>
        </fieldset>
 
        <fieldset>
        <legend>Особенности:</legend>
-
          <ul>
-           <li>
-             <input type="checkbox" name="filter-checkbox" value="#" checked>
-             <label for="filter-radio-checkbox">Слайдер</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
+             <label for="filter-slider">Слайдер</label>
            </li>
-           <li>
-             <input type="checkbox" name="filter-checkbox" value="#">
-             <label for="filter-radio-checkbox">Блок преимуществ</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages-block" id="filter-advantages-block">
+             <label for="filter-advantages-block">Блок преимуществ</label>
            </li>
-           <li>
-             <input type="checkbox" name="filter-checkbox" value="#" checked>
-             <label for="filter-radio-checkbox">Новости</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
+             <label for="filter-news">Новости</label>
            </li>
-           <li>
-             <input type="checkbox" name="filter-checkbox" value="#">
-             <label for="filter-radio-checkbox">Галерея</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
+             <label for="filter-gallery">Галерея</label>
            </li>
-           <li>
-             <input type="checkbox" name="filter-checkbox" value="#">
-             <label for="filter-radio-checkbox">Корзина</label>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="busket" id="filter-busket">
+             <label for="filter-busket">Корзина</label>
            </li>
          </ul>
-
-
        </fieldset>
-       <input type="submit" value="Показать" class="filter-show-as-features">
+       <button type="submit" class="button filter-button">Показать</button>
        </form>
-       </section> -->
+       </section>
 
        <section class="sort">
          <a href="#">Стоимость:</a>
@@ -191,6 +188,14 @@
       </ul>
     </section>
 
+    <div class="pages">
+      <ul>
+        <li class="page-button-current">1</li>
+        <li class="page-button-current">2</li>
+        <li class="page-button-current">2</li>
+      </ul>
+      <button class="button button-next-page" type="submit">Следующая</button>
+    </div>
     </main>
 
     <footer>
