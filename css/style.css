@@ -1,3 +1,16 @@
+@font-face {
+    font-family: "Roboto";
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/web/RobotoBold/RobotoBold.woff2") format(woff2),
+    src: url("../fonts/web/RobotoBold/RobotoBold.woff") format(woff);
+    src: url("../fonts/web/RobotoMedium/RobotoMedium.woff2") format(woff2);
+    src: url("../fonts/web/RobotoMedium/RobotoMedium.woff") format(woff);
+    src: url("../fonts/web/RobotoRegular/Roboto.woff2") format(woff2);
+    src: url("../fonts/web/RobotoRegular/Roboto.woff") format(woff);
+}
+
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -7,4 +20,136 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+body {
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #283136;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  background-color: #eeeeee;
+}
+
+.navigation {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.navigation-list,
+.busket a {
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.navigation-list a,
+.busket a {
+  color: #000000;
+}
+
+/* .busket a {
+  background-image: url(..img/icons/cart-icon.svg);
+  background-repeat: no-repeat;
+} */
+
+/* .navigation-list a:hover,
+.navigation-list a:focus,
+.busket a:hover,
+.busket a:focus, {
+  color: #fb565a;
+} */
+
+.slider-list a {
+  text-transform: uppercase;
+}
+
+.slider-list {
+  list-style: none;
+  background-color: #eeeeee;
+}
+
+.slider-list li:first-child {
+  background-image: url(../img/slide1.png);
+  background-repeat: no-repeat;
+}
+
+.slider-list li:nth-child(2) {
+  background-image: url(../img/slide2.png);
+  background-repeat: no-repeat;
+}
+
+.slider-list li:last-child {
+  background-image: url(../img/slide3.png);
+  background-repeat: no-repeat;
+}
+
+.slider-dots {
+  list-style: none;
+
+}
+
+.slider-list b {
+  font-size: 55px;
+  font-height: 55px;
+}
+
+.services-item a {
+  text-transform: uppercase;
+}
+
+.services-list {
+  list-style: none;
+}
+
+.services-list li:first-child {
+  background-image: url(../img/illustration-1.jpg);
+  background-repeat: no-repeat;
+}
+
+.services-list li:nth-child(2) {
+  background-image: url(../img/illustration-2.jpg);
+  background-repeat: no-repeat;
+}
+
+.services-list li:last-child {
+  background-image: url(../img/illustration-3.jpg);
+  background-repeat: no-repeat;
+}
+
+.services-list h3 {
+  font-size: 24px;
+  font-height: 30px;
+  text-transform: uppercase;
+}
+
+.studio h2 {
+  font-size: 45px;
+  font-height: 45px;
+}
+
+.studio b {
+  text-transform: uppercase;
+}
+
+.studio {
+  background-image: url(../img/nerds-illustration.jpg);
+  background-repeat: no-repeat;
+}
+
+.partners-logo-list {
+  list-style: none;
+}
+
+.social-web-list {
+  list-style: none;
 }
