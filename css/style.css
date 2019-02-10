@@ -57,17 +57,17 @@ a {
   color: #000000;
 }
 
-/* .busket a {
-  background-image: url(..img/icons/cart-icon.svg);
+.busket {
+  background-image: url(../img/icons/cart-icon.svg);
   background-repeat: no-repeat;
-} */
+}
 
-/* .navigation-list a:hover,
+.navigation-list a:hover,
 .navigation-list a:focus,
 .busket a:hover,
-.busket a:focus, {
+.busket a:focus {
   color: #fb565a;
-} */
+}
 
 .slider-list a {
   text-transform: uppercase;
