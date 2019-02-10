@@ -77,6 +77,12 @@ a {
   color: #fb565a;
 }
 
+.navigation-list a:active,
+.busket a:active {
+  text-decoration: underline;
+  text-decoration-color: #f7988b;
+}
+
 .slider-list a {
   text-transform: uppercase;
 }
