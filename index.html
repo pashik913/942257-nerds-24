@@ -107,26 +107,26 @@
    <section class="partners-logo">
      <ul class="partners-logo-list">
      <li>
-       <a href="#">
-         <img src="img/logo-1.png" width="199" height="68" alt="HTML academy научим вас создавать современные Web-интерфейсы">
+       <a href="#" class="partners-logo-item">
+         <img style="opacity: 0.5;" src="img/logo-1.png" width="199" height="68" alt="HTML academy научим вас создавать современные Web-интерфейсы">
        </a>
      </li>
 
      <li>
-       <a href="#">
-         <img src="img/logo-2.png" width="209" height="87" alt="Барбершоп Бородинский-подстригайся стильно">
+       <a href="#" class="partners-logo-item">
+         <img style="opacity: 0.5;" src="img/logo-2.png" width="209" height="87" alt="Барбершоп Бородинский-подстригайся стильно">
        </a>
      </li>
 
      <li>
-       <a href="#">
-         <img src="img/logo-3.png" width="185" height="52" alt="Скачай приложение на свой гаджет и смотри на всё сквозь розовые очки">
+       <a href="#" class="partners-logo-item">
+         <img style="opacity: 0.5;" src="img/logo-3.png" width="185" height="52" alt="Скачай приложение на свой гаджет и смотри на всё сквозь розовые очки">
        </a>
     </li>
 
      <li>
        <a href="#">
-         <img src="img/logo-4.png" width="173" height="84" alt="Декор своими руками, закажи сейчас">
+         <img style="opacity: 0.5;" src="img/logo-4.png" width="173" height="84" alt="Декор своими руками, закажи сейчас">
        </a>
      </li>
      </ul>
@@ -144,7 +144,9 @@
          <p>
            <a href="#">тел. +7 (812) 275-75-75</a>
          </p>
+         <div class="write-us">
            <a href="#">Напишите нам</a>
+         </div>
        </div>
 
        <img src="img/map-marker.png" width="231" height="190" alt="Мы находимся здесь">
@@ -154,15 +156,15 @@
        <span>Напишите нам</span>
        <button class="modal-close" type="button" aria-label="закрыть модальное окно"></button>
 
-         <form action="#" method="post">
+         <form action="#" method="post" class="modal-form">
            <label for="name-field">Вашe имя:</label>
-           <input type="text" name="name" id="name-field" required>
+           <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
 
            <label for="email-field">Ваш e-mail:</label>
-           <input type="email" name="email" id="email-field" required>
+           <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
 
            <label for="mail-field">Текст письма:</label>
-           <textarea id="mail-field" required></textarea>
+           <textarea id="mail-field" placeholder="В свободной форме" required></textarea>
 
            <button type="submit" value="Отправить">Отправить</button>
          </form>
