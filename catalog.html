@@ -19,7 +19,7 @@
         <li><a href="contacts.html">Контакты</a></li>
       </ul>
       </nav>
-      
+
       <div class="busket">
       <a href="#">Корзина</a>
      </div>
@@ -49,7 +49,7 @@
         <fieldset>
         <legend>Сетка:</legend>
 
-         <ul>
+         <ul class="filter-list">
            <li class="filter-option">
              <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-adaptive" value="adaptive" type="radio" checked>
              <label for="filter-adaptive">Адаптивная</label>
@@ -69,7 +69,7 @@
 
        <fieldset>
        <legend>Особенности:</legend>
-         <ul>
+         <ul class="filter-list">
            <li class="filter-option">
              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
              <label for="filter-slider">Слайдер</label>
@@ -124,7 +124,7 @@
                   <h3>Sedona</h3>
                 </a>
                   <p>Информационный сайт для туристов</p>
-                  <span>9 900 руб.</span>
+                  <span class="button">9 900 руб.</span>
               </div>
             </li>
 
@@ -138,7 +138,7 @@
               <h3>Pink APP</h3>
             </a>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
-              <span>9 900 руб.</span>
+              <span class="button">9 900 руб.</span>
           </div>
         </li>
 
@@ -152,7 +152,7 @@
               <h3>Barbershop</h3>
             </a>
               <p>Сайт салона красоты. Для мужчин, да</p>
-              <span>9 900 руб.</span>
+              <span class="button">9 900 руб.</span>
           </div>
         </li>
 
@@ -163,7 +163,7 @@
             </a>
           <div class="mishka-catalog-info">
             <a href="#">
-              <h3>Mishka</h3>
+              <h3 class="button">Mishka</h3>
             </a>
               <p>Интернет-магазин вязаных игрушек</p>
               <span>9 900 руб.</span>
@@ -177,7 +177,7 @@
             </a>
           <div class="aplus-catalog-info">
             <a href="#">
-              <h3>A Plus</h3>
+              <h3 class="button">A Plus</h3>
             </a>
               <p>Лендинг курсов повышения квалификации</p>
               <span>9 900 руб.</span>
@@ -191,7 +191,7 @@
             </a>
           <div class="kvast-catalog-info">
             <a href="#">
-              <h3>Кваст</h3>
+              <h3 class="button">Кваст</h3>
             </a>
               <p>Промо-сайт производителя крафтового кваса</p>
               <span>9 900 руб.</span>
@@ -229,33 +229,36 @@
            191186, Санкт-Петербург,
            ул. Б.Конюшенная, д.19/8
           </p>
-          <p>
+          <p class="number">
             <a href="#">тел. +7 (812) 275-75-75</a>
           </p>
-            <a href="#">Напишите нам</a>
+
+          <a href="#" class="button">Напишите нам</a>
         </div>
-        <img src="img/map-marker.png" width="231" height="190" alt="Мы находимся здесь">
+
+        <img src="img/map.jpg" width="1440" height="793" alt="Мы находимся здесь">
       </section>
 
       <section class="modal">
         <span>Напишите нам</span>
+
         <button class="modal-close" type="button" aria-label="закрыть модальное окно"></button>
 
-          <form action="#" method="post">
+          <form action="#" method="post" class="modal-form">
             <label for="name-field">Вашe имя:</label>
-            <input type="text" name="name" id="name-field" required>
+            <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
 
             <label for="email-field">Ваш e-mail:</label>
-            <input type="email" name="email" id="email-field" required>
+            <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
 
             <label for="mail-field">Текст письма:</label>
-            <textarea id="mail-field" required></textarea>
+            <textarea id="mail-field" placeholder="В свободной форме" required></textarea>
 
-            <button type="submit">Отправить</button>
+            <button class="button" type="submit" value="Отправить">Отправить</button>
           </form>
 
         <div class="social-web">
-          <ul>
+          <ul class="social-web-list">
             <li><a href="#">Мы вконтакте</a></li>
             <li><a href="#">Мы в фейсбуке</a></li>
             <li><a href="#">Мы в инстаграмме</a></li>

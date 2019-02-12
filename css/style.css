@@ -109,7 +109,7 @@ a {
 .slider-list b {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -210,4 +210,66 @@ a {
 .social-web p {
   font-size: 16px;
   line-height: 22px;
+}
+
+h1 {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filter-form legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.filter-form p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.sort a {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283136;
+}
+
+.sort li {
+  list-style: none;
+}
+
+.filter-list li {
+  list-style: none;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.catalog h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.catalog p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.catalog-list li {
+  list-style: none;
+}
+
+.page-list li {
+  list-style: none;
+}
+
+.page-list a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
 }
