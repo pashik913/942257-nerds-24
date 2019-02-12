@@ -1,14 +1,28 @@
 @font-face {
     font-family: "Roboto";
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/Roboto.woff2") format(woff2),
+         url("../fonts/Roboto.woff") format(woff);
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    src: url("../fonts/RobotoMedium.woff2") format(woff2),
+         url("../fonts/RobotoMedium.woff") format(woff);
+}
+
+@font-face {
+    font-family: "Roboto";
     font-weight: 700;
     font-style: normal;
     font-display: swap;
-    src: url("../fonts/web/RobotoBold/RobotoBold.woff2") format(woff2),
-    src: url("../fonts/web/RobotoBold/RobotoBold.woff") format(woff);
-    src: url("../fonts/web/RobotoMedium/RobotoMedium.woff2") format(woff2);
-    src: url("../fonts/web/RobotoMedium/RobotoMedium.woff") format(woff);
-    src: url("../fonts/web/RobotoRegular/Roboto.woff2") format(woff2);
-    src: url("../fonts/web/RobotoRegular/Roboto.woff") format(woff);
+    src: url("../fonts/RobotoBold.woff2") format(woff2),
+         url("../fonts/RobotoBold.woff") format(woff);
 }
 
 .visually-hidden {
@@ -25,10 +39,10 @@
 body {
   margin: 0;
 
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
-  font-weight: 700;
+  font-weight: 400;
   color: #283136;
 }
 
@@ -37,7 +51,7 @@ body {
 }
 
 .header-logo:active {
-  opacity: 0.25;
+  opacity: 0.3;
 }
 
 a {
@@ -55,7 +69,8 @@ a {
 }
 
 .navigation-list,
-.busket a {
+.busket {
+  font-weight: 700;
   list-style: none;
   text-transform: uppercase;
 }
@@ -63,11 +78,6 @@ a {
 .navigation-list a,
 .busket a {
   color: #000000;
-}
-
-.busket {
-  background-image: url(../img/icons/cart-icon.svg);
-  background-repeat: no-repeat;
 }
 
 .navigation-list a:hover,
@@ -92,72 +102,59 @@ a {
   background-color: #eeeeee;
 }
 
-.slider-list li:first-child {
-  background-image: url(../img/slide1.png);
-  background-repeat: no-repeat;
-}
-
-.slider-list li:nth-child(2) {
-  background-image: url(../img/slide2.png);
-  background-repeat: no-repeat;
-}
-
-.slider-list li:last-child {
-  background-image: url(../img/slide3.png);
-  background-repeat: no-repeat;
-}
-
 .slider-dots {
   list-style: none;
-
 }
 
 .slider-list b {
   font-size: 55px;
-  font-height: 55px;
+  line-height: 55px;
+  font-weight: 700;
+  color: #000000;
 }
 
-.services-item a {
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
   text-transform: uppercase;
+  /* color: #ffffff; */
 }
 
 .services-list {
   list-style: none;
 }
 
-.services-list li:first-child {
-  background-image: url(../img/illustration-1.jpg);
-  background-repeat: no-repeat;
-}
-
-.services-list li:nth-child(2) {
-  background-image: url(../img/illustration-2.jpg);
-  background-repeat: no-repeat;
-}
-
-.services-list li:last-child {
-  background-image: url(../img/illustration-3.jpg);
-  background-repeat: no-repeat;
-}
-
 .services-list h3 {
   font-size: 24px;
-  font-height: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
   text-transform: uppercase;
 }
 
 .studio h2 {
   font-size: 45px;
-  font-height: 45px;
+  line-height: 45px;
+  color: #000000;
 }
 
 .studio b {
+  font-weight: 700;
   text-transform: uppercase;
+  color: #000000;
 }
 
-.studio {
-  background-image: url(../img/nerds-illustration.jpg);
-  background-repeat: no-repeat;
+.table-percent {
+  font-size: 45px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.table-feature {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .partners-logo-list {
@@ -166,8 +163,13 @@ a {
 
 .map-navigation h3 {
   font-size: 18px;
-  font-height: 30px;
+  line-height: 30px;
   text-transform: uppercase;
+  color: #000000;
+}
+
+.number a {
+  color: inherit;
 }
 
 .write-us a {
@@ -178,36 +180,34 @@ a {
   list-style: none;
 }
 
-.modal {
-  font-size: 16px;
-  font-height: 18px;
-  background-image: url(../img/icons/close-cross.svg);
-  background-repeat: no-repeat;
-}
-
 .modal span {
   font-size: 45px;
-  font-height: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
 }
 
-.modal-form input:hover,
+.modal-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* .modal-form input:hover,
 .modal-form textarea:hover {
   border-color: #000000;
   border-width: 2px;
-  border-width: thin;
-}
-
-.map-navigation {
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
-}
-
-.contacts {
-  background-image: url(../img/white-back.png);
-  background-repeat: no-repeat;
-}
+} */
 
 .social-web b {
   font-size: 36px;
-  font-height: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.social-web p {
+  font-size: 16px;
+  line-height: 22px;
 }
