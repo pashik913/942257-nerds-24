@@ -7,21 +7,25 @@
   </head>
   <body>
     <header class="header">
-      <a href="index.html" class="header-logo">
+     <div class="container">
+       <a href="index.html" class="header-logo">
         <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизйн-студии Нёрдс">
-      </a>
+       </a>
 
       <nav class="navigation">
+
       <ul class="navigation-list">
-        <li><a href="studio.html">Студия</a></li>
-        <li><a href="customers.html">Клиенты</a></li>
-        <li><a href="shop.html">Магазин</a></li>
-        <li><a href="contacts.html">Контакты</a></li>
+        <li><a class="navigation-link" href="studio.html">Студия</a></li>
+        <li><a class="navigation-link" href="customers.html">Клиенты</a></li>
+        <li><a class="navigation-link" href="catalog.html">Магазин</a></li>
+        <li><a class="navigation-link" href="contacts.html">Контакты</a></li>
       </ul>
       </nav>
 
+
       <div class="busket">
-      <a href="#">Корзина</a>
+        <a class="navigation-link" href="#">Корзина</a>
+      </div>
      </div>
     </header>
 
@@ -236,7 +240,7 @@
           <a href="#" class="button">Напишите нам</a>
         </div>
 
-        <img src="img/map.jpg" width="1440" height="793" alt="Мы находимся здесь">
+        <img src="img/map.jpg" width="1440" height="793" alt="Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
       </section>
 
       <section class="modal">
@@ -254,18 +258,20 @@
             <label for="mail-field">Текст письма:</label>
             <textarea id="mail-field" placeholder="В свободной форме" required></textarea>
 
-            <button class="button" type="submit" value="Отправить">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
           </form>
+        </section>
 
-        <div class="social-web">
+       <section class="social">
           <ul class="social-web-list">
             <li><a href="#">Мы вконтакте</a></li>
             <li><a href="#">Мы в фейсбуке</a></li>
             <li><a href="#">Мы в инстаграмме</a></li>
           </ul>
+          <div class="social-web-friends">
             <b>Давайте дружить, это выгодно</b>
             <p>Скидка 10% для друзей из социальных сетей</p>
-        </div>
+          </div>
       </section>
     </footer>
     </body>

@@ -6,48 +6,69 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
+
    <header class="header">
+    <div class="container">
       <a href="index.html" class="header-logo">
        <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип дизйн-студии Нёрдс">
       </a>
 
      <nav class="navigation">
+
      <ul class="navigation-list">
-       <li><a href="studio.html">Студия</a></li>
-       <li><a href="customers.html">Клиенты</a></li>
-       <li><a href="catalog.html">Магазин</a></li>
-       <li><a href="contacts.html">Контакты</a></li>
+       <li><a class="navigation-link" href="studio.html">Студия</a></li>
+       <li><a class="navigation-link" href="customers.html">Клиенты</a></li>
+       <li><a class="navigation-link" href="catalog.html">Магазин</a></li>
+       <li><a class="navigation-link" href="contacts.html">Контакты</a></li>
      </ul>
      </nav>
 
      <div class="busket">
-      <a href="#">Корзина</a>
+      <a class="navigation-link" href="#">Корзина</a>
      </div>
+  </div>
    </header>
 
    <main>
-      <h1 class="visually-hidden">Дизайн-студия из краснодара</h1>
+    <h1 class="visually-hidden">Дизайн-студия из краснодара</h1>
 
     <section class="slider">
+      <div class="container">
      <ul class="slider-list">
+
        <li class="slider-item">
-         <p><img src="img/slide1.png" alt="слайд1"></p>
+       <div>
          <b>Долго, дорого, скурпулезно.</b>
          <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
          <a href="#" class="button">Узнать больше</a>
+       </div>
+       <div>
+         <p><img src="img/slide1.png" alt="слайд #1"></p>
+       </div>
        </li>
+
        <li class="slider-item">
-         <p><img src="img/slide2.png"  alt="слайд2"></p>
+       <div>
          <b>Любим математику как никто другой</b>
          <p>Никакого креатива, только математические формулы для расчета идеальных пропорций</p>
          <a href="#" class="button">Узнать больше</a>
+       </div>
+       <div>
+         <p><img src="img/slide2.png"  alt="слайд #2"></p>
+       </div>
        </li>
+
        <li class="slider-item">
-         <p><img src="img/slide3.png"  alt="слайд3"></p>
+       <div>
          <b>Только ночь, только хардкор</b>
          <p>Работать днем как все? Мы против этого. Ближе к полуночи работа только начинается</p>
          <a href="#" class="button">Узнать больше</a>
+       </div>
+       <div>
+         <p><img src="img/slide3.png"  alt="слайд #3"></p>
+       </div>
        </li>
+
      </ul>
 
      <ul class="slider-dots">
@@ -55,13 +76,15 @@
       <li class="slider-dot"></li>
       <li class="slider-dot"></li>
      </ul>
+   </div>
     </section>
 
    <section class="services">
+     <div class="container">
       <ul class="services-list">
        <li class="services-item">
          <h3>Веб-сайты</h3>
-         <p>Мир никогда не будет прежним после того как увидит ваш сайт</p>
+         <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
          <a href="#" class="button">Заказать</a>
        </li>
 
@@ -77,9 +100,12 @@
          <a href="#" class="button">Заказать</a>
        </li>
      </ul>
+   </div>
    </section>
 
    <section class="studio">
+     <div class="container">
+       <div class="studio-block-left">
      <h2>Мы - маленькая, но гордая дизайн-студия из Краснодара.</h2>
        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук</p>
        <b>Выполняем заказы на разработку:</b>
@@ -89,7 +115,9 @@
        <li>Мобильных приложений для iOS и Android</li>
        <li>Слайдшоу и видео для корпоративных презентаций</li>
      </ul>
+       </div>
 
+       <div class="studio-block-right">
      <b>С 2004 года любим точность во всем:</b>
      <table>
        <tr>
@@ -103,6 +131,8 @@
          <td class="table-feature">Минимальная предоплата</td>
        </tr>
      </table>
+       </div>
+   </div>
    </section>
 
    <section class="partners-logo">
@@ -148,8 +178,7 @@
 
          <a href="#" class="button">Напишите нам</a>
        </div>
-
-       <img src="img/map.jpg" width="1440" height="793" alt="Мы находимся здесь">
+         <img src="img/map.jpg" width="1440" height="793" alt="Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
      </section>
 
      <section class="modal">
@@ -167,18 +196,20 @@
            <label for="mail-field">Текст письма:</label>
            <textarea id="mail-field" placeholder="В свободной форме" required></textarea>
 
-           <button class="button" type="submit" value="Отправить">Отправить</button>
+           <button class="button" type="submit">Отправить</button>
          </form>
+       </section>
 
-       <div class="social-web">
+      <section class="social">
          <ul class="social-web-list">
            <li><a href="#">Мы вконтакте</a></li>
            <li><a href="#">Мы в фейсбуке</a></li>
            <li><a href="#">Мы в инстаграмме</a></li>
          </ul>
+         <div class="social-web-friends">
            <b>Давайте дружить, это выгодно</b>
            <p>Скидка 10% для друзей из социальных сетей</p>
-       </div>
+         </div>
      </section>
    </footer>
  </body>
