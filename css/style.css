@@ -25,7 +25,11 @@
          url("../fonts/RobotoBold.woff") format("woff");
 }
 
-body > * {
+img {
+  max-width: 100%; height: auto;
+}
+
+/* body > * {
   background-color: rgba(255, 0, 0, 0.5);
 }
 
@@ -35,7 +39,7 @@ body > * > * {
 
 body > * > * > * {
   background-color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 .visually-hidden {
     position: absolute;
@@ -210,15 +214,17 @@ a {
 
 .map-navigation {
   position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
-.map-navigation-wrapper {
+/* .map-navigation-wrapper {
   width: 100%;
-}
+} */
 
-.map-navigation-wrapper img {
-  width: 100%;
-}
+/* .map-navigation-wrapper img {
+
+} */
 
 .contacts {
   width: 319px;
@@ -248,6 +254,7 @@ a {
 
 .social-web-list {
   list-style: none;
+  display: flex;
 }
 
 .modal span {
@@ -339,6 +346,8 @@ a {
 .catalog-list li,
 .page-list li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .page-list a {
@@ -382,15 +391,15 @@ a {
   background-size: cover;
 }
 
-.illustration-1 h3::before {
+.services-item-web h3::before {
   background-image: url(../img/illustration-1.jpg);
 }
 
-.illustration-2 h3::before {
+.services-item-apps h3::before {
   background-image: url(../img/illustration-2.jpg);
 }
 
-.illustration-3 h3::before {
+.services-item-presentation h3::before {
   background-image: url(../img/illustration-3.jpg);
 }
 
@@ -401,23 +410,27 @@ a {
   margin-top: 160px;
   height: 528px;
   justify-content: space-between;
-  align-items: center;
   border-color: #f4f4f4 transparent #f4f4f4 transparent ;
   border-style: solid;
 }
 
 .studio-block-left {
   width: 660px;
+  padding-top: 60px;
 }
 
 .studio-block-right {
   width: 360px;
+  margin: 0;
+  margin-bottom: 26px;
+  padding-top: 289px;
+  position: relative;
 }
 
 .studio-block-right::before {
   content: "";
-  position: relative;
-  top: 0;
+  position: absolute;
+  top: 41px;
   right: 0;
   display: block;
   width: 360px;
@@ -437,16 +450,12 @@ a {
   margin-bottom: 82px;
 }
 
-.modal-wrapper {
+/* .modal {
   position: absolute;
   width: 960px;
   height: 600px;
   background-color: #fff;
-}
-
-.social-web-list {
-  display: flex;
-}
+} */
 
 .social {
   margin-top: 70px;
@@ -464,9 +473,13 @@ a {
   display: flex;
 }
 
-.sort ul {
+.sort-list {
   display: flex;
   justify-content: space-between;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
 }
 
 .catalog-list {
@@ -476,12 +489,6 @@ a {
   justify-content: space-between;
 }
 
-.sort-list {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
 
 .sort-list:first-child {
   font-weight: 700;
