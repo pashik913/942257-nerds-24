@@ -65,6 +65,16 @@ body {
   color: #283136;
 }
 
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 a {
   text-decoration: none;
 }
@@ -73,7 +83,6 @@ a {
   width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .header {
@@ -677,7 +686,7 @@ a {
 }
 
 .modal {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   position: fixed;
   background-color: red;
@@ -691,20 +700,44 @@ a {
 
 }
 
+.modal-wrapper-first {
+  display: flex;
+}
+
+.modal-close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+  width: 21px;
+  height: 21px;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close:before,
+.modal-close:after {
+  top: 0;
+  position: absolute;
+  content: "";
+  height: 21px;
+  width: 2px;
+  background-color: #fb565a;
+}
+
+.modal-close:before {
+transform: rotate(45deg);
+}
+
+.modal-close:after {
+transform: rotate(-45deg);
+}
+
 .modal-wrapper {
   display: flex;
   width: 760px;
   justify-content: space-between;
-}
-
-.social-web-list {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  width: 260px;
-  justify-content: space-between;
-  margin-right: 140px;
 }
 
 .social {
@@ -713,8 +746,20 @@ a {
   padding-bottom: 70px;
 }
 
+.social-web-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 260px;
+  justify-content: space-between;
+  margin-right: 140px;
+}
+
 .social-web-item {
-  display: block;
+  display: flex;
+  justify-content: center;
   width: 79px;
   height: 79px;
   border-radius: 50%;
@@ -726,16 +771,15 @@ a {
   background-color: #e74246;
 }
 
-.social-web-item:active {
+.social-web-item:active ~ img opacity: 0.3 {
   background-color: #d7373b;
 }
 
-.social-icons {
-  background-repeat: no-repeat;
-  background-position: center;
+.social-web-item:active {
+  img opacity: 0.3;
 }
 
-.social-vk {
+/* .social-vk {
   background-image: url(../img/icons/vk-icon.svg);
 }
 
@@ -745,7 +789,7 @@ a {
 
 .social-insta {
   background-image: url(../img/icons/insta-icon.svg);
-}
+} */
 
 .filter-item {
   margin: 0;
