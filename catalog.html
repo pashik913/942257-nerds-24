@@ -55,18 +55,24 @@
 
          <ul class="filter-list">
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-adaptive" value="adaptive" type="radio" checked>
-             <label for="filter-adaptive">Адаптивная</label>
+             <label class="filter-label filter-label-radio" for="filter-adaptive">
+               <input class="visually-hidden" name="product-group" id="filter-adaptive" value="adaptive" type="radio" checked>
+                 <span class="filter-radio">Адаптивная</span>
+             </label>
            </li>
 
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-fixed" value="fixed" type="radio">
-             <label for="filter-fixed">Фиксированная</label>
+             <label class="filter-label filter-label-radio" for="filter-fixed">
+               <input class="visually-hidden" name="product-group" id="filter-fixed" value="fixed" type="radio">
+                 <span class="filter-radio">Фиксированная</span>
+               </label>
            </li>
 
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-radio" name="product-group" id="filter-rubber" value="rubber" type="radio">
-             <label for="filter-rubber">Резиновая</label>
+             <label class="filter-label filter-label-radio" for="filter-rubber">
+               <input class="visually-hidden" name="product-group" id="filter-rubber" value="rubber" type="radio">
+                 <span class="filter-radio">Резиновая</span>
+             </label>
            </li>
          </ul>
        </fieldset>
@@ -75,24 +81,34 @@
        <legend>Особенности:</legend>
          <ul class="filter-list">
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
-             <label for="filter-slider">Слайдер</label>
+             <label class="filter-label filter-label-checkbox" for="filter-slider">
+             <input class="visually-hidden" type="checkbox" name="slider" id="filter-slider" checked>
+               <span class="filter-checkbox">Слайдер</span>
+             </label>
            </li>
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="advantages-block" id="filter-advantages-block">
-             <label for="filter-advantages-block">Блок преимуществ</label>
+             <label class="filter-label filter-label-checkbox" for="filter-advantages-block">
+             <input class="visually-hidden" type="checkbox" name="advantages-block" id="filter-advantages-block">
+               <span class="filter-checkbox">Блок преимуществ</span>
+             </label>
            </li>
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news" id="filter-news" checked>
-             <label for="filter-news">Новости</label>
+             <label class="filter-label filter-label-checkbox" for="filter-news">
+               <input class="visually-hidden" type="checkbox" name="news" id="filter-news" checked>
+               <span class="filter-checkbox">Новости</span>
+             </label>
            </li>
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery" id="filter-gallery">
-             <label for="filter-gallery">Галерея</label>
+             <label class="filter-label filter-label-checkbox" for="filter-gallery">
+               <input class="visually-hidden" type="checkbox" name="gallery" id="filter-gallery">
+               <span class="filter-checkbox">Галерея</span>
+             </label>
            </li>
            <li class="filter-option">
-             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="busket" id="filter-busket">
-             <label for="filter-busket">Корзина</label>
+             <label class="filter-label filter-label-checkbox" for="filter-busket">
+             <input class="visually-hidden" type="checkbox" name="busket" id="filter-busket">
+               <span class="filter-checkbox">Корзина</span>
+             </label>
            </li>
          </ul>
        </fieldset>
@@ -210,19 +226,19 @@
     <div class="page">
       <ul class="page-list">
         <li>
-          <a class="page-button page-button-current" href="#">1</a>
+          <a class="button page-button page-button-current" href="#">1</a>
         </li>
 
         <li>
-          <a class="page-button" href="#">2</a>
+          <a class="button page-button" href="#">2</a>
         </li>
 
         <li>
-          <a class="page-button" href="#">3</a>
+          <a class="button page-button" href="#">3</a>
         </li>
 
         <li>
-          <a class="page-button page-button-next" href="#">Следующая</a>
+          <a class="button page-button page-button-next" href="#">Следующая</a>
         </li>
       </ul>
     </div>
@@ -233,6 +249,7 @@
   <footer>
     <section class="map-navigation">
       <div class="contacts">
+        <div class="contacts-wrapper">
         <h3 class="contacts-headline">NЁRDS DESIGN STUDIO</h3>
         <p>
           191186, Санкт-Петербург,<br>
@@ -244,31 +261,32 @@
 
         <a href="#" class="button">Напишите нам</a>
       </div>
+      </div>
       <div class="map-navigation-wrapper">
         <img src="img/map.jpg" height="416" alt="Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
       </div>
     </section>
 
     <section class="modal container">
-
+        <div class="modal-wrapper-first">
         <span>Напишите нам</span>
 
         <button class="modal-close" type="button" aria-label="закрыть модальное окно"></button>
-
+        </div>
         <form action="#" method="post" class="modal-form">
           <div class="modal-wrapper">
             <p>
               <label class="modal-field" for="name-field">Вашe имя:</label>
-              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия" required>
+              <input type="text" name="name" id="name-field" placeholder="Имя Фамилия">
             </p>
             <p>
               <label class="modal-field" for="email-field">Ваш e-mail:</label>
-              <input type="email" name="email" id="email-field" placeholder="email@example.com" required>
+              <input type="email" name="email" id="email-field" placeholder="email@example.com" >
             </p>
           </div>
             <p>
               <label class="modal-field" for="mail-field">Текст письма:</label>
-              <textarea id="mail-field" placeholder="В свободной форме" required></textarea>
+              <textarea id="mail-field" placeholder="В свободной форме"></textarea>
             </p>
           <button class="button" type="submit">Отправить</button>
 
@@ -277,12 +295,24 @@
     </section>
 
     <section class="social container">
-      <ul class="social-web-list">
-        <li><a class="social-web-item social-vk" href="#" aria-label="Мы вконтакте"></a></li>
-        <li><a class="social-web-item social-fb" href="#" aria-label="Мы в фейсбуке"></a></li>
-        <li><a class="social-web-item social-insta" href="#" aria-label="Мы в инстаграмме"></a></li>
+      <ul class="social-list">
+        <li>
+          <a class="social-item social-vk" href="#" aria-label="Мы вконтакте">
+            <img src="img/icons/vk-icon.svg" width="26" height="15">
+          </a>
+        </li>
+        <li>
+          <a class="social-item social-fb" href="#" aria-label="Мы в фейсбуке">
+            <img src="img/icons/fb-icon.svg" width="12" height="22">
+          </a>
+        </li>
+        <li>
+          <a class="social-item social-insta" href="#" aria-label="Мы в инстаграмме">
+            <img src="img/icons/insta-icon.svg" width="21" height="21">
+          </a>
+        </li>
       </ul>
-      <div class="social-web-friends">
+      <div class="social-friends">
         <b>Давайте дружить, это выгодно</b>
         <p>Скидка 10% для друзей из социальных сетей</p>
       </div>
