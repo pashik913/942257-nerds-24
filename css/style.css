@@ -124,6 +124,8 @@ body {
   flex-wrap: wrap;
 }
 
+
+
 .navigation-list li {
   margin-right: 45px;
 }
@@ -137,6 +139,21 @@ body {
 
   display: block;
   padding: 8px 0;
+}
+
+.busket {
+  position: relative;
+}
+
+.busket::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url(../img/icons/cart-icon.svg);
+  background-repeat: no-repeat;
+  top: 15px;
+  left: -40px;
 }
 
 .navigation-link-current {
@@ -178,8 +195,8 @@ body {
 
   display: inline-block;
   width: 18px;
-  /* height: 18px; */
-  padding: 8px;
+  height: 18px;
+  padding: 18px;
 
   border-radius: 50%;
   cursor: pointer;
@@ -250,9 +267,11 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
+  top: 17px;
+  left: 17px;
   z-index: 2;
-  width: 4px;
-  height: 4px;
+  width: 8px;
+  height: 8px;
   margin: -4px;
   background-color: inherit;
   border: 2px solid #c1c1c1;
@@ -379,19 +398,7 @@ body {
   text-transform: uppercase;
 }
 
-.modal span {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
-  color: #000000;
-}
 
-.modal-field {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 700;
-  color: #000000;
-}
 
 .social-friends {
   font-size: 16px;
@@ -734,7 +741,7 @@ body {
 }
 
 .modal {
-  display: none;
+  /* display: none; */
   flex-direction: column;
   position: fixed;
   background-color: red;
@@ -746,10 +753,88 @@ body {
   background-color: #fff;
   padding: 80px 85px 100px 100px;
 
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
 }
 
-.modal-wrapper-first {
-  display: flex;
+.modal span {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.modal-field {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  display: block;
+}
+
+
+
+.modal-form input[type="text"],
+.modal-form input[type="email"] {
+  width: 360px;
+  min-height: 50px;
+  padding-left: 15px;
+
+  border: 2px solid #ebedee;
+  outline: none;
+
+  color: #ebedee;
+}
+
+.modal-form input[type="text"]:hover,
+.modal-form input[type="email"]:hover {
+  border: 2px solid #d9dcdd;
+  color: #d9dcdd;
+}
+
+.modal-form input[type="text"]:focus,
+.modal-form input[type="email"]:focus {
+  border: 2px solid #808080;
+  color: #808080;
+}
+
+.modal-form input[type="text"]:invalid,
+.modal-form input[type="email"]:invalid {
+  border: 2px solid #ef8184;
+  color: #ef8184;
+}
+
+.modal-form textarea:hover {
+  border: 2px solid #d9dcdd;
+  color: #d9dcdd;
+}
+
+.modal-form textarea:focus {
+  border: 2px solid #808080;
+  color: #808080;
+}
+
+.modal-form textarea:invalid {
+  border: 2px solid #ef8184;
+  color: #ef8184;
+}
+
+.modal-form textarea {
+  width: 760px;
+  min-height: 115px;
+  padding: 15px;
+  margin-bottom: 31px;
+  border: 2px solid #ebedee;
+  outline: none;
+  color: #ebedee;
+}
+
+.modal-form label {
+  padding: 12px 0;
+}
+
+.modal-form label {
+  padding: 12px 0;
 }
 
 .modal-close {
@@ -758,9 +843,10 @@ body {
   right: 90px;
   width: 21px;
   height: 21px;
+  font-size: 0;
   justify-content: center;
   background: none;
-  border: none;
+  border: 0;
   cursor: pointer;
 }
 
@@ -772,15 +858,22 @@ body {
   height: 21px;
   width: 2px;
   background-color: #fb565a;
+  opacity: 0.3;
 }
 
 .modal-close:before {
-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .modal-close:after {
-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
+
+.modal-close:hover,
+.modal-close:focus {
+
+}
+
 
 .modal-wrapper {
   display: flex;
