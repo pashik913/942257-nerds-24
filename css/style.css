@@ -141,11 +141,11 @@ body {
   padding: 8px 0;
 }
 
-.busket {
+.busket a {
   position: relative;
 }
 
-.busket::before {
+.busket a::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -350,6 +350,10 @@ body {
   color: #000000;
 }
 
+.table-percent sup {
+  top: -11px;
+}
+
 .table-feature {
   font-size: 16px;
   line-height: 18px;
@@ -370,15 +374,21 @@ body {
   position: absolute;
   top: 54px;
   left: 140px;
+
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
 }
 
 .contacts-wrapper {
-  padding-left: 51px;
-  padding-top: 54px;
+  padding-top: 52px;
+  padding-left: 50px;
 }
 
 .contacts-wrapper a:last-child {
   width: 219px;
+  margin-top: 40px;
 }
 
 .contacts-headline {
@@ -474,12 +484,6 @@ body {
   padding: 0;
   margin: 0;
   margin-bottom: 40px;
-}
-
-.sort-wrapper {
-  width: 360px;
-  display: flex;
-  justify-content: space-between;
 }
 
 .sort-item {
@@ -1113,6 +1117,10 @@ body {
   margin-bottom: 50px;
 }
 
+.sort-list span {
+  margin-right: 240px;
+}
+
 .catalog {
   display: flex;
   flex-wrap: wrap;
@@ -1208,6 +1216,11 @@ body {
 
 .page-button:hover {
   background-color: #dfdfdf;
+}
+
+.page-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
 .page-button-next {
