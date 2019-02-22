@@ -382,13 +382,15 @@ body {
 }
 
 .contacts-wrapper {
-  padding-top: 52px;
-  padding-left: 50px;
+  padding: 52px 68px 37px 51px;
 }
 
-.contacts-wrapper a:last-child {
+.write-us-wrapper {
+  padding-left: 51px;
+}
+
+.write-us-wrapper a:last-child {
   width: 219px;
-  margin-top: 40px;
 }
 
 .contacts-headline {
