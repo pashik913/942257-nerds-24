@@ -379,6 +379,14 @@ body {
   line-height: 18px;
   font-weight: 400;
   color: #666666;
+
+  z-index: 1;
+}
+
+.map-navigation iframe {
+  position: absolute;
+  top: 0;
+  z-index: 0;
 }
 
 .contacts-wrapper {
@@ -392,6 +400,8 @@ body {
 .write-us-wrapper a:last-child {
   width: 219px;
 }
+
+
 
 .contacts-headline {
   margin-top: 0;
@@ -409,8 +419,6 @@ body {
 .write-us a {
   text-transform: uppercase;
 }
-
-
 
 .social-friends {
   font-size: 16px;
@@ -813,19 +821,6 @@ body {
   opacity: 0.1;
 }
 
-.contacts-map {
-  display: none;
-  flex-direction: column;
-  position: fixed;
-  left: 560px;
-  bottom: 150px;
-}
-
-.contacts-map button {
-  top: -10px;
-  right: -30px;
-}
-
 @keyframes bounce {
   0% {
     transform: translateY(-2000px);
@@ -868,19 +863,22 @@ body {
 
 .modal {
   display: none;
-  flex-direction: column;
   position: fixed;
-  background-color: red;
   width: 960px;
   height: 600px;
-  /* top: 50%;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); */
-  left: 495px;
-  bottom: 180px;
+  margin-top: -300px;
+  margin-left: -480px;
   background-color: #fff;
   padding: 80px 85px 100px 100px;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.8);
+
+  z-index: 2;
+}
+
+.modal textarea {
+  resize: vertical;
 }
 
 .modal-show {
@@ -909,46 +907,52 @@ body {
 }
 
 .modal-form input[type="text"],
-.modal-form input[type="email"] {
+.modal-form input[type="email"],
+.modal-form textarea {
   width: 360px;
   min-height: 50px;
   padding-left: 15px;
-  border: 2px solid #ebedee;
+  border: 2px solid #ebedef;
   outline: none;
-  color: #ebedee;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .modal-form input[type="text"]:hover,
-.modal-form input[type="email"]:hover {
+.modal-form input[type="email"]:hover,
+.modal-form textarea:hover {
   border: 2px solid #d9dcdd;
-  color: #d9dcdd;
+  color: rgba(68, 68, 68, 0.5);
 }
 
 .modal-form input[type="text"]:focus,
-.modal-form input[type="email"]:focus {
-  border: 2px solid #808080;
-  color: #808080;
+.modal-form input[type="email"]:focus,
+.modal-form textarea:focus {
+  border: 2px solid #444444;
+  color: rgba(68, 68, 68, 1);
 }
 
 .modal-form input[type="text"]:invalid,
-.modal-form input[type="email"]:invalid {
-  border: 2px solid #ef8184;
-  color: #ef8184;
-}
-
-.modal-form textarea:hover {
-  border: 2px solid #d9dcdd;
-  color: #d9dcdd;
-}
-
-.modal-form textarea:focus {
-  border: 2px solid #808080;
-  color: #808080;
-}
-
+.modal-form input[type="email"]:invalid,
 .modal-form textarea:invalid {
   border: 2px solid #ef8184;
-  color: #ef8184;
+  color: rgba(231, 66, 70, 1);
+}
+
+.modal-form input::placeholder,
+.modal-form input:hover::placeholder,
+.modal-form textarea::placeholder
+.modal-form textarea:hover::placeholder {
+  color: rgba(68, 68, 68, 0.5);
+}
+
+.modal-form input:focus::placeholder,
+.modal-form textarea:focus::placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
+.modal-form input:invalid::placeholder,
+.modal-form textarea:invalid::placeholder {
+  color: rgba(231, 66, 70, 1);
 }
 
 .modal-form textarea {
@@ -956,9 +960,6 @@ body {
   min-height: 115px;
   padding: 15px;
   margin-bottom: 31px;
-  border: 2px solid #ebedee;
-  outline: none;
-  color: #ebedee;
 }
 
 .modal-form label {
