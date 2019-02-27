@@ -805,8 +805,8 @@ body {
 
 .partners-logo {
   border-bottom: 2px solid #f4f4f4;
-  padding-top: 62px;
-  padding-bottom: 25px;
+  padding-top: 46px;
+  padding-bottom: 42px;
   margin-bottom: 76px;
 }
 
@@ -817,6 +817,7 @@ body {
   padding: 0 35px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .partners-logo-link {
