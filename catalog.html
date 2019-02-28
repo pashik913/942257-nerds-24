@@ -40,8 +40,8 @@
             <div class="scale">
               <div class="bar"></div>
             </div>
-            <button class="toggle toggle-min"></button>
-            <button class="toggle toggle-max"></button>
+            <button type="button" class="toggle toggle-min" aria-label="Минимальное значение фильтра"></button>
+            <button type="button" class="toggle toggle-max" aria-label="Максимальное значение фильтра"></button>
           </div>
           <div class="price-controls">
             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
@@ -129,6 +129,7 @@
              <a class="icon-up" href="#" aria-label="Сортировать по возрастанию"></a>
            </li>
          </ul>
+
       <section class="catalog">
         <h2 class="visually-hidden">Каталог макетов</h2>
         <ul class="catalog-list">
@@ -137,11 +138,11 @@
             <a class="catalog-image" href="#">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Городок Седона отдых и не только">
             </a>
-            <div class="catalog-info">
+            <div class="catalog-info sedona">
             <a href="#">
               <h3 class="catalog-item-info">Sedona</h3>
             </a>
-              <p>Информационный сайт <br> для туристов</p>
+              <p>Информационный сайт для туристов</p>
             <a href="#" class="button catalog-button">9 900 руб.</a>
           </div>
         </li>
@@ -151,11 +152,11 @@
             <a class="catalog-image" href="#">
               <img src="img/img-pink.jpg" width="360" height="576" alt="Приложение для вашего телефона">
             </a>
-          <div class="catalog-info">
+          <div class="catalog-info pink">
             <a href="#">
               <h3 class="catalog-item-info">Pink APP</h3>
             </a>
-              <p>Продуктовый лендинг <br> приложения для iOS и Android</p>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
               <a href="#" class="button catalog-button">9 900 руб.</a>
           </div>
         </li>
@@ -165,11 +166,11 @@
             <a class="catalog-image" href="#">
               <img src="img/img-barbershop.jpg" width="360" height="576" alt="Сайт для стрижки барбешоп">
             </a>
-          <div class="catalog-info">
+          <div class="catalog-info barber">
             <a href="#">
               <h3 class="catalog-item-info">Barbershop</h3>
             </a>
-              <p>Сайт салона красоты. <br> Для мужчин, да</p>
+              <p>Сайт салона красоты. Для мужчин, да</p>
               <a href="#" class="button catalog-button">9 900 руб.</a>
           </div>
         </li>
@@ -179,11 +180,11 @@
             <a class="catalog-image" href="#">
               <img src="img/img-mishka.jpg" width="360" height="576" alt="Вещи ручной работы">
             </a>
-          <div class="catalog-info">
+          <div class="catalog-info mishka">
             <a href="#">
               <h3 class="catalog-item-info">Mishka</h3>
             </a>
-              <p>Интернет-магазин <br> вязаных игрушек</p>
+              <p>Интернет-магазин вязаных игрушек</p>
               <a href="#" class="button catalog-button">9 900 руб.</a>
           </div>
         </li>
@@ -193,11 +194,11 @@
             <a class="catalog-image" href="#">
               <img src="img/img-aplus.jpg" width="360" height="576" alt="Обучайся с интересом в аплюс">
             </a>
-          <div class="catalog-info">
+          <div class="catalog-info aplus">
             <a href="#">
               <h3 class="catalog-item-info">A Plus</h3>
             </a>
-              <p>Лендинг курсов повышения <br> квалификации</p>
+              <p>Лендинг курсов повышения квалификации</p>
               <a href="#" class="button catalog-button">9 900 руб.</a>
           </div>
         </li>
@@ -207,11 +208,11 @@
             <a class="catalog-image" href="#">
               <img src="img/img-kvast.jpg" width="360" height="576" alt="Крафтовый квас">
             </a>
-          <div class="catalog-info">
+          <div class="catalog-info kvast">
             <a href="#">
               <h3 class="catalog-item-info">Кваст</h3>
             </a>
-              <p>Промо-сайт производителя <br> крафтового кваса</p>
+              <p>Промо-сайт производителя крафтового кваса</p>
               <a href="#" class="button catalog-button">9 900 руб.</a>
             </div>
           </li>
@@ -238,6 +239,7 @@
       </ul>
     </div>
   </div>
+  </div>
   </main>
 
   <footer>
@@ -247,18 +249,19 @@
         <h3 class="contacts-headline">NЁRDS DESIGN STUDIO</h3>
         <p>
           191186, Санкт-Петербург,
-          ул. Б.Конюшенная, д.19/8
+          ул. Б. Конюшенная, д. 19/8
         </p>
         <p class="number">
-          <a href="#">тел. +7 (812) 275-75-75</a>
+          <a href="tel:4234324">тел. +7 (812) 275-75-75</a>
         </p>
         </div>
         <div class="write-us-wrapper">
         <a href="#" class="button button-write-us">Напишите нам</a>
         </div>
       </div>
-        <img src="img/map.jpg" width="1440" height="416" alt="Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2914486787595!2d30.3239611119834!3d59.939063093335456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1551118156218" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <img src="img/map.jpg" width="1200" height="416" alt="Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2914486787595!2d30.3239611119834!3d59.939063093335456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1551118156218"
+        width="1440" height="416" style="border:0" allowfullscreen></iframe>
     </section>
 
     <section class="modal modal-write-us">

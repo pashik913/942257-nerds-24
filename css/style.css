@@ -137,7 +137,7 @@ body {
   font-weight: 500;
 
   display: block;
-  padding: 8px 0;
+  padding: 5px 0;
 }
 
 .busket a {
@@ -156,7 +156,7 @@ body {
   height: 15px;
   background-image: url(../img/icons/cart-icon.svg);
   background-repeat: no-repeat;
-  top: 15px;
+  top: 12px;
   left: -40px;
 }
 
@@ -305,6 +305,7 @@ body {
 
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -326,18 +327,10 @@ body {
   box-shadow: 0 3px rgba(0, 0, 0, 0.1) inset;
 }
 
-.services-list h3 {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  color: #000000;
-  text-transform: uppercase;
-}
-
 .studio-headline {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
   margin: 35px auto;
 }
@@ -378,8 +371,8 @@ body {
   background-color: #fff;
 
   position: absolute;
-  top: 50px;
-  left: 60px;
+  top: 48px;
+  left: 140px;
 
   font-size: 16px;
   line-height: 18px;
@@ -392,15 +385,17 @@ body {
 .map-navigation iframe {
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 0;
+  width: 100%;
 }
 
 .contacts-wrapper {
-  padding: 52px 60px 23px 55px;
+  padding: 52px 60px 23px 50px;
 }
 
 .write-us-wrapper {
-  padding-left: 55px;
+  padding-left: 50px;
 }
 
 .write-us-wrapper a:last-child {
@@ -481,8 +476,9 @@ body {
   width: 260px;
   background-color: #eee;
   color: #000;
-  font-weight: 500;
   outline: none;
+  cursor: pointer;
+  margin-top: 56px;
 }
 
 .filter-button:hover,
@@ -500,7 +496,7 @@ body {
   border: 0;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .sort-item {
@@ -614,6 +610,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 25px;
 }
 
 .catalog p {
@@ -657,14 +654,19 @@ body {
   margin-right: 100px;
 }
 
-.services-item:last-child  {
-  margin: 0;
-}
-
 .services-item h3 {
   margin: 0;
   padding-top: 172px;
   position: relative;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.services-item:last-child  {
+  margin: 0;
 }
 
 .services-item h3::before {
@@ -786,7 +788,7 @@ body {
 
 .studio-table td {
   padding: 0px;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-right: 13px;
 }
 
@@ -813,11 +815,40 @@ body {
 .partners-logo-list {
   list-style: none;
   margin: 0;
-  padding: 0;
   padding: 0 35px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
   align-items: center;
+}
+
+.logo-2::before,
+.logo-3::before,
+.logo-4::before {
+  content: "";
+  width: 2px;
+  height: 52px;
+  background-image: url(../img/border.png);
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.logo-1 a {
+  padding-right: 49px;
+}
+
+.logo-2 a {
+  padding-left: 45px;
+  padding-right: 44px;
+}
+
+.logo-3 a {
+  padding-left: 57px;
+  padding-right: 56px;
+}
+
+.logo-4 a {
+  padding-left: 63px;
 }
 
 .partners-logo-link {
@@ -1036,9 +1067,9 @@ body {
 }
 
 .social {
-  margin-top: 70px;
+  margin-top: 65px;
   display: flex;
-  padding-bottom: 70px;
+  padding-bottom: 60px;
 }
 
 .social-list {
@@ -1062,7 +1093,7 @@ body {
 }
 
 .social-friends {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .social-friends p {
@@ -1086,7 +1117,7 @@ body {
   margin: 0;
   padding: 0;
   border: none;
-  margin-bottom: 62px;
+  margin-bottom: 56px;
 }
 
 .range-filter {
@@ -1203,10 +1234,11 @@ body {
   margin: 0;
   padding: 0;
   margin-bottom: 55px;
+  align-items: center;
 }
 
 .sort-list span {
-  margin-right: 240px;
+  margin-right: 237px;
 }
 
 .catalog {
@@ -1227,8 +1259,6 @@ body {
   background-size: cover;
 }
 
-
-
 .catalog-item {
   position: relative;
   margin-bottom: 25px;
@@ -1241,6 +1271,30 @@ body {
   height: 231px;
   background-color: #eee;
   text-align: center;
+}
+
+.sedona p {
+  padding: 0 80px;
+}
+
+.pink p {
+  padding: 0 60px;
+}
+
+.barber p {
+  padding: 0 90px;
+}
+
+.mishka p {
+  padding: 0 100px;
+}
+
+.aplus p {
+  padding: 0 60px;
+}
+
+.kvast p {
+  padding: 0 60px;
 }
 
 .catalog-item .catalog-info {
