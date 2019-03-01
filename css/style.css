@@ -537,7 +537,7 @@ body {
 }
 
 .filter-option {
-  padding-top: 15px;
+  padding-top: 16px;
 }
 
 .filter-checkbox,
@@ -764,7 +764,7 @@ body {
 
 .studio-item {
   position: relative;
-  padding: 11px 20px;
+  padding: 11px 25px;
   list-style: none;
 }
 
@@ -774,7 +774,7 @@ body {
   content: "";
   height: 25px;
   width: 2px;
-  background-color: #fdaaac;
+  background-color: #fc8e91;
   transform: rotate(90deg);
 }
 
@@ -821,32 +821,41 @@ body {
   align-items: center;
 }
 
-.logo-2::before,
-.logo-3::before,
-.logo-4::before {
-  content: "";
-  width: 2px;
-  height: 52px;
-  background-image: url(../img/border.png);
-  background-repeat: no-repeat;
-  position: absolute;
+.partners-logo-item {
+  position: relative;
 }
 
-.logo-1 a {
+.partners-logo-item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  display: block;
+  width: 2px;
+  height: 52px;
+  background-color: #f4f4f4;
+}
+
+.partners-logo-item:last-child::before {
+  content: none;
+}
+
+.logo-academy a {
   padding-right: 49px;
 }
 
-.logo-2 a {
+.logo-barber a {
   padding-left: 45px;
   padding-right: 44px;
 }
 
-.logo-3 a {
+.logo-pink a {
   padding-left: 57px;
   padding-right: 56px;
 }
 
-.logo-4 a {
+.logo-mishka a {
   padding-left: 63px;
 }
 
@@ -1228,16 +1237,31 @@ body {
   line-height: 18px;
   text-transform: uppercase;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   list-style: none;
   margin: 0;
   padding: 0;
   margin-bottom: 55px;
   align-items: center;
+  /* flex-wrap: wrap; */
 }
 
 .sort-list span {
   margin-right: 237px;
+}
+
+.sort-list li {
+  padding-right: 25px;
+}
+
+.sort-list li:nth-child(5) {
+  padding-left: 23px;
+  padding-right: 0;
+}
+
+.sort-list li:last-child {
+  padding-right: 0;
+  padding-left: 18px;
 }
 
 .catalog {
