@@ -1472,7 +1472,6 @@ body {
 
 .catalog-info {
   position: absolute;
-  /* top: 385px; */
   width: 360px;
   min-height: 231px;
   background-color: #eee;
