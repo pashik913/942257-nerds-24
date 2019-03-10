@@ -617,6 +617,7 @@ body {
   color: #000000;
   text-transform: uppercase;
   margin-top: 28px;
+  padding: 0 20px;
 }
 
 .catalog p {
@@ -1235,7 +1236,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1470,6 +1472,8 @@ body {
   margin-bottom: 25px;
 }
 
+.catalog-item
+
 .catalog-info {
   position: absolute;
   width: 360px;
@@ -1477,6 +1481,12 @@ body {
   background-color: #eee;
   text-align: center;
   bottom: 0;
+  word-wrap: break-word;
+}
+
+.catalog-info p {
+  max-height: 360px;
+  overflow: hidden;
 }
 
 .sedona p {
